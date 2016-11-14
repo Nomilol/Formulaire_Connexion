@@ -1,10 +1,20 @@
 var express = require('express');
+var bodyParser = require('body-parser');
 var app = express();
+app.use(bodyParser.urlencoded({extended : false}));
 
-app.get('/', function(req, res){
-	res.send('Coucou');
-});
+app.use(express.static('public'));
 
 app.listen(2222, function(){
 	console.log('Héhé, ça marche');
 });
+
+
+app.post('/login',function(req, res){
+	var userName = 'Nomilol';
+	var password = 'jaune';
+	if(req.body.username == userName && req.body.password == password){
+		console.log('Authentification réussie');
+
+	}
+})
