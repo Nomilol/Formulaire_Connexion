@@ -1,10 +1,17 @@
 {
   "name": "2016_11_14",
   "version": "1.0.0",
+<<<<<<< HEAD
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
+=======
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+>>>>>>> 46b56b58aa2ceb0e282966632158cd6b2e3e4e68
   },
   "repository": {
     "type": "git",
@@ -21,6 +28,10 @@
     "express": "^4.14.0",
     "jquery": "^3.1.1",
     "semantic-ui-css": "^2.2.4"
+<<<<<<< HEAD
   },
   "description": ""
+=======
+  }
+>>>>>>> 46b56b58aa2ceb0e282966632158cd6b2e3e4e68
 }
