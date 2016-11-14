@@ -10,37 +10,37 @@ console.log('Start');
 		listeners : function(){
 			$('#submit').on('click', app.sendToServer);
 			// $('#submit').on('click',function(event){
-			// 	event.preventDefault();
-			// });
-			app.sendToServer();
-		},
-		recupValueInput : function(){
-			console.log(username);
-			console.log(password);
-		},
-		sendToServer : function(){
-			app.username = $('#userName').val();
-			app.password = $('#password').val();
-			$.ajax({
-				type : 'POST',
-				data : {
-					username : app.username,
-					password : app.password,
-				}, 
-				url : '/login',
-				success : function(){
-					console.log('success');
-				},
-				error : function(){
-					console.log('error');
-				}
-			});
-		},
+			 //	event.preventDefault();
+			 //});
+			 app.sendToServer();
+			},
+			recupValueInput : function(){
+				console.log(username);
+				console.log(password);
+			},
+			sendToServer : function(){
+				app.username = $('#userName').val();
+				app.password = $('#password').val();
+				$.ajax({
+					type : 'POST',
+					data : {
+						username : app.username,
+						password : app.password,
+					}, 
+					url : '/login',
+					success : function(){
+						console.log('success');
+					},
+					error : function(){
+						console.log('error');
+					}
+				});
+			}
 
 
- 
-	}
+			
+		}
 
 
-	app.init();
-})();
+		app.init();
+	})();
