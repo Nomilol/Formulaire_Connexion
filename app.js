@@ -8,7 +8,7 @@ console.log('Start');
 			app.listeners();
 		},
 		listeners : function(){
-			$('#submit').on('click', app.sendToServer);
+			$('#submit').on('submit', app.sendToServer);
 			// $('#submit').on('click',function(event){
 			 //	event.preventDefault();
 			 //});
