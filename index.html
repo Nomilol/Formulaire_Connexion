@@ -8,14 +8,16 @@
 </head>
 <body>
 	
-	<form method="post" action="/login"> 
-		<div id="pseudo">
-			<label for="userName">Nom d'utilisateur</label><br>
-			<input type="text" id="userName" name="username" value="Nomilol">
-		</div>
-		<div>
-			<label for="password">Mot de passe</label><br>
-			<input type="password" id="password" name="password" value="jaune">
+	<form method="post" action="/login" class="ui tiny form"> 
+		<div class="two fields">	
+			<div id="pseudo" class="field">
+				<label for="userName">Nom d'utilisateur</label><br>
+				<input type="text" id="userName" name="username" value="Nomilol">
+			</div>
+			<div class="field">
+				<label for="password">Mot de passe</label><br>
+				<input type="password" id="password" name="password" value="jaune">
+			</div>
 		</div>
 		<button id="submit">Valider</button>
 	</form>
