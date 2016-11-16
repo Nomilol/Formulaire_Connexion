@@ -4,7 +4,7 @@ var app = express();
 
 app.use(bodyParser.urlencoded({extended : false}));
 
-app.use(express.static('public'));
+app.use(express.static(__dirname+ '/public'));
 app.use(bodyParser());
 
 app.listen(2222, function(){
@@ -16,8 +16,12 @@ app.post('/login',function(req, res){
 	var userName = 'Nomilol';
 	var password = 'jaune';
 	if(req.body.username === userName && req.body.password === password){
-		res.send('/login');
+
+		res.sendFile(__dirname+'/public/newPage.html');
 	}else{
-		console.log('Nom d\'utilisateur ou mot de passe incorrect');
+		res.send('Nom d\'utilisateur ou mot de passe incorrect');
 	}
 });  
+
+		
+
