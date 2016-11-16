@@ -15,8 +15,9 @@ app.listen(2222, function(){
 app.post('/login',function(req, res){
 	var userName = 'Nomilol';
 	var password = 'jaune';
-	if(req.body.username == userName && req.body.password == password){
+	if(req.body.username === userName && req.body.password === password){
 		res.send('/login');
-
+	}else{
+		console.log('Nom d\'utilisateur ou mot de passe incorrect');
 	}
-})  
+});  
