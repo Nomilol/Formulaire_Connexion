@@ -4,13 +4,13 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
 
-  "description" "",
+  "description" : "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
- 46b56b58aa2ceb0e282966632158cd6b2e3e4e68
+ 
   },
   "repository": {
     "type": "git",
@@ -32,5 +32,5 @@
   "description": ""
 
   }
- 46b56b58aa2ceb0e282966632158cd6b2e3e4e68
+ 
 }

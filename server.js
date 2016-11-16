@@ -20,4 +20,4 @@ app.post('/login',function(req, res){
 	}else{
 		res.send('Nom d\'utilisateur ou mot de passe incorrect');
 	}
-});
+}); 
