@@ -16,8 +16,12 @@ app.post('/login',function(req, res){
 	var userName = 'Nomilol';
 	var password = 'jaune';
 	if(req.body.username === userName && req.body.password === password){
+
 		res.sendFile(__dirname+'/public/newPage.html');
 	}else{
 		res.send('Nom d\'utilisateur ou mot de passe incorrect');
 	}
 });  
+
+		
+
